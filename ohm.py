@@ -28,4 +28,4 @@ for sensor in temperature_infos:
     #     print(sensor.Value)
     # else:
     #     print("Unknown Sensor " + str(sensor))
-    print(f'OhmSensors,host={hostname},id="{esc(sensor.Identifier)}",name="{esc(sensor.Name)}",type="{esc(sensor.SensorType)}",parent="{esc(sensor.Parent)}",index={sensor.Index} value={sensor.Value}')
+    print(f'OhmSensors,host={hostname},id={esc(sensor.Identifier)},name={esc(sensor.Name)},type={esc(sensor.SensorType)},parent={esc(sensor.Parent)},index={sensor.Index} value={sensor.Value}')
